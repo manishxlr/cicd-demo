@@ -44,3 +44,4 @@ jobs:
         context: .
         file: ./cicd
         push: true
+        tags: manishxlr/practice-cicd:1.0.0

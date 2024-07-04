@@ -1,11 +1,10 @@
 name: Android CI
 
 env:
-  # The name of the main module repository
+  date_today: 05-07-2024
   main_project_module: app
-
-  # The name of the Play Store
-  playstore_name: Frogobox ID
+  playstore_name: Playstore
+  repository_name: CICD
 
 on:
   push:

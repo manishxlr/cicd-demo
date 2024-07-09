@@ -28,6 +28,11 @@ jobs:
     - name: Run Lint
       run: ./gradlew lint
       continue-on-error: true
+    - name: Lint results
+      uses: actions/upload-artifact@v4
+      with:
+        name: lint-results
+        path: app/build/reports/lint-results-debug.html
 
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
